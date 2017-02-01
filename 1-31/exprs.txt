@@ -1,0 +1,28 @@
+Houfu Yan
+
+Q1:
+
+Ints are essentially shorts but they hold smaller values and take less space
+because they do that.
+
+Floats and doubles are basically the same too but floats have less accuracy.
+
+Q2:
+
+I get 3.0000000e+00 as an answer. My guess is that the 2s and 5s are integers
+and therefore are truncated after operationa and the truncated value is then
+being thrown into a float container.
+
+Q3:
+
+I got: 
+
+i is 	1 
+j is 	1 
+x is 	0 
+y is 	1 
+
+This happened because i++ and ++i is equivilant to i=i+1 in the end so i and 
+j are equal to 1. X is equal to 0 because having the ++ after the variable 
+adds 1 after the value is used while having it before adds 1 before the value
+is used
