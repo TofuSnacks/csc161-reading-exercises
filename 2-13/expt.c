@@ -10,7 +10,7 @@ double expt( double base, int power)
   else if(power <0)
     {
       power = -power;
-        for(int x = 0; x<power; x++)
+        for(int x = 1; x<power; x++)
           {
             answer = answer*base;
           }
@@ -19,7 +19,7 @@ double expt( double base, int power)
   else
     {
 
-      for(int x = 0; x<power; x++)
+      for(int x = 1; x<power; x++)
         {
           answer = answer*base;
         }
@@ -33,10 +33,18 @@ double expt( double base, int power)
 
 int main(void)
 {
+  
   double a = expt(2, 3);
   double b = expt(-3, 3);
   double c = expt(3, -4);
   double d = expt(0, 5);
-  double e = expt(.23, 4);
+  double e = expt(.25, -4);
+
+  printf( "%lf\n", a );
+  printf( "%lf\n", b );
+  printf( "%lf\n", c );
+  printf( "%lf\n", d );
+  printf( "%lf\n", e );
+
   return 0;
 }
